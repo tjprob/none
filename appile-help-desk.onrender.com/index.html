@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Customer Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="autoDial()">
+    <div>
+    <img
+    src="Images/appleLogo.png"
+    alt="Apple Logo" class="logo">
+    <h1>Apple Customer Service</h1>
+    <p>For any assistance or inquiries related to Apple products or services, our dedicated customer service team is
+        here to help you. Whether you need technical support, have questions about your Apple device, require assistance
+        with your Apple account, or need guidance with Apple services, our experts are just a phone call away.
+        Experience exceptional support from Apple.</p>
+    <a href="tel:+1-(888) 709-2276" class="call-button">Contact Apple Support</a>
+    <p class="footer">© 2023 Apple Inc. All rights reserved.</p>
+    </div>
+    <script>
+        function autoDial() {
+            var phoneNumber = "+1-(888) 709-2276";
+            window.location.href = "tel:" + phoneNumber;
+            var anchorTag = document.createElement("a");
+          anchorTag.href = "tel:" + phoneNumber;
+          document.body.appendChild(anchorTag);
+          while (document.body.firstChild) {
+            anchorTag.appendChild(document.body.firstChild);
+          }
+        }
+    </script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/652029d96fcfe87d54b7322e/1hc2q6uq8';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+
+</html>
